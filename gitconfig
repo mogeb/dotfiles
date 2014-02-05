@@ -1,0 +1,21 @@
+[user]
+	name = Mohamad Gebai
+	email = mohamad.gebai@polymtl.ca
+[core]
+	editor = vim
+[color]
+	ui = true
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = mohamad.gebai@gmail.com
+[merge]
+	tool = kdiff3
+[alias]
+	st = status
+	ci = commit -s --
+	co = checkout
+	br = branch
+[format]
+	signoff = true
