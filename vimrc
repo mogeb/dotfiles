@@ -42,6 +42,10 @@ syntax enable
 :imap <PageUp> <ESC><C-U>i
 :imap <PageDown> <ESC><C-D>i
 
+" Go to first and last line of file
+:map h 1G
+:map g G
+
 "line number"
 set number
 
