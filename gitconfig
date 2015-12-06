@@ -17,5 +17,7 @@
 	ci = commit -s --
 	co = checkout
 	br = branch
+	lg = log --graph --date=relative
+	l = log --graph --oneline --decorate
 [format]
 	signoff = true
