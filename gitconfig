@@ -1,6 +1,6 @@
 [user]
 	name = Mohamad Gebai
-	email = mohamad.gebai@polymtl.ca
+	email = mohamad.gebai@gmail.com
 [core]
 	editor = vim
 [color]
@@ -21,3 +21,9 @@
 	l = log --graph --oneline --decorate
 [format]
 	signoff = true
+[difftool]
+	prompt = false
+[diff]
+	tool = meld
+[difftool "p4merge"]
+	cmd = meld $LOCAL $REMOTE

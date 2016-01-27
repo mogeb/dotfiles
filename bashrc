@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias l='ls -F'
+alias l='ls -lt'
 alias grep='grep --color=auto'
 
 alias ..='cd ..'
@@ -33,6 +33,15 @@ cd() {
   else
     builtin cd ~ && ls
   fi
+}
+
+# lh: ls -lt | head -n 15
+lh() {
+	if [ -n "$1" ]; then
+		ls -lt "$1" | head -n 15
+	else
+		ls -lt | head -n 15
+	fi
 }
 
 YELLOW="\[\033[0;33m\]"
