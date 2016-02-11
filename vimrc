@@ -60,13 +60,22 @@ filetype plugin indent on
 :nmap <Tab>	:tabn<cr>
 :nmap <S-Tab>	:tabp<cr>
 
+" F2 and F3 are copy/paste between instances of vim
 :map <F2> :w! ~/.swp<cr>
 :map <F3> :r ~/.swp<cr>
+
 " Default tab width
+set tabstop=4
+set shiftwidth=4
 autocmd FileType python,xml set tabstop=4|set shiftwidth=4
-autocmd FileType c,cpp,h,hpp,java set tabstop=2|set shiftwidth=2
-set tabstop=2
-set shiftwidth=2
+autocmd FileType c,cpp,h,hpp,java set tabstop=4|set shiftwidth=4
+
+" make "tab" insert indents instead of tabs at the beginning of a line
+set smarttab
+
+" " always uses spaces instead of tab characters
+set expandtab
+
 nnoremap <F9> :set hlsearch!<CR>
 
 "https://github.com/Rafiot/dotfiles/blob/15fd87919f616e67507b6320974a16d10c86e1d3/_vimrc 
@@ -317,4 +326,5 @@ if has("cscope")
 
 endif
 
+" Monokai theme
 colorscheme monokai
