@@ -317,3 +317,4 @@ if has("cscope")
 
 endif
 
+colorscheme monokai
