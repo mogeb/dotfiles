@@ -1,0 +1,19 @@
+[global_config]
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#0f232b"
+    background_image = None
+    font = Ubuntu Mono 14
+    foreground_color = "#f1eef0"
+    scrollback_infinite = True
+    use_system_font = False
