@@ -20,6 +20,8 @@ alias cdb='cd $OLD_PWD'
 
 export EDITOR=vim
 export PS1="\[\033[01;32m\]\$(pwd)\[\033[01;34m\] $>\[\033[00m\] "
+# For a colored output of iostat
+export S_COLORS=always
 
 if [ $UID -eq 0 ] ; then
   export PS1="\[\033[01;31m\]# \$(pwd) $>\[\033[00m\] "
